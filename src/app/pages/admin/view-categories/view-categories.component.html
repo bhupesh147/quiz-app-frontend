@@ -1,0 +1,21 @@
+<mat-card>
+    <h1 matSubheader>All Categories</h1>
+    <mat-list *ngFor="let c of categories">
+        <mat-list-item lines="3">
+            <span matListItemTitle>
+                <mat-icon mat-line>category</mat-icon>
+                {{c.title}}
+            </span>
+            {{c.description}}
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          
+        </mat-list>
+  </mat-card>
+  
+  
+  
+  
+  
+
+

@@ -1,0 +1,55 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+             <mat-card class="mt20">
+                <mat-card-header>
+                    <!-- heading -->
+                    <mat-card-title>
+                        Read the instructions of this page carefully
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        One step more to go...
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <!-- content -->
+                    <h1>{{quiz.title}}</h1>
+                    <p>{{quiz.description}}</p>
+                    <mat-divider></mat-divider>
+                    <br>
+                    <h1>Importent Instructions</h1>
+                    <ul>
+                       <li> This quiz for only practice purpose.</li>
+                       <li> You have submit the quiz within <b>{{quiz.numberOfQuestions*2}} minutes.</b></li>
+                       <li> You can attempts the quiz any number of time.</li>
+                       <li> There are <b>{{quiz.numberOfQuestions}} questions </b> in this quiz. </li>
+                       <li>Each question carry <b>{{quiz.maxMarks/quiz.numberOfQuestions}} marks </b>. No negative marking for wrong answer.</li>
+                       <li>All Question are MCQs type.</li>
+                    </ul>
+                    <mat-divider></mat-divider>
+                    <br>
+                    <h1>Attempting Quiz</h1>
+                    <ul>
+                        <li>Click <b>Start Quiz</b> to start the quiz.</li>
+                        <li>The time will start the moment when you click the Start test.</li>
+                        <li>Scroll down to move next question.</li>
+                        <li>Click on Submit button to submit the quiz.</li>
+                        <li>Report of the test is automatically generated in form of PDF copy.</li>
+                    </ul>
+                </mat-card-content>
+
+               
+                <mat-card-actions class="mb20">
+                    <!-- action -->
+                    <button 
+                    (click)="startQuiz()"
+                     mat-raised-button color="primary">
+                        Start Quiz
+                    </button >
+                </mat-card-actions>
+            </mat-card>
+            </div>
+        </div>
+    </div>
+</div>
